@@ -309,6 +309,7 @@ body {
 
     border: none;
     cursor: pointer;
+    text-decoration: none;
 
     transition: background 0.2s ease, transform 0.15s ease;
 }
