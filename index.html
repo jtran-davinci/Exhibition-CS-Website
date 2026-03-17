@@ -13,7 +13,7 @@
             <div class="main-content">
                 <div class="song-card">
                   <div class="song-image-container">
-                    <img class="song-image" src="images/LightsGIF.gif"/>
+                    <img class="song-image" src="images/Freudian_by_Daniel_Caesar.jpg"/>
                   </div>
                   <div class="song-detail">
                     <div class="song-upper">
@@ -31,9 +31,52 @@
 
             <div class="main-content">
                 <div class="song-player">
-                  
+                  <div class="progress-container" id="progressContainer">
+                    <div class="progress-bar" id="progressBar"></div>
+                    <div class="progress-knob" id="progressKnob"></div>
+                  </div>
+
+                  <div class="time-row">
+                    <span id="currentTime">0:00</span>
+                    <span id="duration">0:00</span>
+                  </div>
+
+                  <div class="controls">
+                    <button id="rewind" class="control-btn">
+                      
+                      <!-- rewind SVG -->
+                      <svg viewBox="0 0 24 24" width="28">
+                        <polygon points="11 19 2 12 11 5 11 19"></polygon>
+                        <polygon points="22 19 13 12 22 5 22 19"></polygon>
+                      </svg>
+
+                    </button>
+
+                    <button id="playPause" class="control-btn">
+
+                      <!-- play icon initially -->
+                      <svg id="playIcon" viewBox="0 0 24 24" width="32">
+                        <polygon points="5 3 19 12 5 21"></polygon>
+                      </svg>
+
+                    </button>
+
+                    <button id="forward" class="control-btn">
+
+                      <!-- forward SVG -->
+                      <svg viewBox="0 0 24 24" width="28">
+                        <polygon points="13 5 22 12 13 19 13 5"></polygon>
+                        <polygon points="2 5 11 12 2 19 2 5"></polygon>
+                      </svg>
+
+                    </button>
+                  </div>
                 </div>
             </div>
+
+            <button id="showCode" class="show-code-btn">
+              Show Code
+            </button>
         </div>
     </div>
   </body>
