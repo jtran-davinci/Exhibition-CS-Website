@@ -1,0 +1,214 @@
+{
+    "songs": {
+        "justin": {
+            "genre": "r&b",
+            "cover": "/song-data/justin/Freudian_by_Daniel_Caesar.jpg",
+            "background": "/song-data/justin/background.gif",
+            "recording": "/song-data/justin/custom-song.wav",
+            "code": "/song-data/justin/code.rb",
+            "song-name": "Best Part (feat H.E.R.)",
+            "artists": "Daniel Caesar, H.E.R.",
+            "creator": "Justin Tran"
+        },
+        "anthony": {
+            "genre": "",
+            "cover": "/song-data/anthony/",
+            "background": "/song-data/anthony/",
+            "recording": "/song-data/anthony/custom song.wav",
+            "code": "/song-data/anthony/code.rb",
+            "song-name": "",
+            "artists": "",
+            "creator": "Anthony Trejo"
+        },
+        "ashley": {
+            "genre": "",
+            "cover": "/song-data/ashley/",
+            "background": "/song-data/ashley/",
+            "recording": "/song-data/ashley/monster.wav",
+            "code": "/song-data/ashley/code.rb",
+            "song-name": "",
+            "artists": "",
+            "creator": "Ashley Sutton"
+        },
+        "auria": {
+            "genre": "",
+            "cover": "/song-data/auria/",
+            "background": "/song-data/auria/",
+            "recording": "/song-data/auria/Sonic Pi Code 0.rb.wav",
+            "code": "/song-data/auria/",
+            "song-name": "",
+            "artists": "",
+            "creator": "Aura Moore"
+        },
+        "chia": {
+            "genre": "",
+            "cover": "/song-data/chia/",
+            "background": "/song-data/chia/",
+            "recording": "/song-data/chia/Custom Song Recording - Return Of The Mack.wav",
+            "code": "/song-data/chia/code.rb",
+            "song-name": "",
+            "artists": "",
+            "creator": "Chiamaka Igwebuike"
+        },
+        "cooper": {
+            "genre": "",
+            "cover": "/song-data/cooper/",
+            "background": "/song-data/cooper/",
+            "recording": "/song-data/cooper/",
+            "code": "/song-data/cooper/code.rb",
+            "song-name": "",
+            "artists": "",
+            "creator": "Cooper Soto"
+        },
+        "daniel": {
+            "genre": "",
+            "cover": "/song-data/daniel/",
+            "background": "/song-data/daniel/",
+            "recording": "/song-data/daniel/",
+            "code": "/song-data/daniel/code.rb",
+            "song-name": "",
+            "artists": "",
+            "creator": "Daniel Silva"
+        },
+        "diego": {
+            "genre": "",
+            "cover": "/song-data/diego/",
+            "background": "/song-data/diego/",
+            "recording": "/song-data/diego/",
+            "code": "/song-data/diego/code.rb",
+            "song-name": "",
+            "artists": "",
+            "creator": "Diego Gomez"
+        },
+        "ethan": {
+            "genre": "",
+            "cover": "/song-data/ethan/",
+            "background": "/song-data/ethan/",
+            "recording": "/song-data/ethan/",
+            "code": "/song-data/ethan/code.rb",
+            "song-name": "",
+            "artists": "",
+            "creator": "Ethan Barba"
+        },
+        "lindsey": {
+            "genre": "",
+            "cover": "/song-data/lindsey/",
+            "background": "/song-data/lindsey/",
+            "recording": "/song-data/lindsey/",
+            "code": "/song-data/lindsey/code.rb",
+            "song-name": "",
+            "artists": "",
+            "creator": "Lindsey Grion"
+        },
+        "liyah": {
+            "genre": "",
+            "cover": "/song-data/justin/",
+            "background": "/song-data/justin/",
+            "recording": "/song-data/justin/custom song.wav",
+            "code": "/song-data/justin/code.rb",
+            "song-name": "",
+            "artists": "",
+            "creator": "Liyah Edwards"
+        },
+        "mina": {
+            "genre": "",
+            "cover": "/song-data/mina/",
+            "background": "/song-data/mina/",
+            "recording": "/song-data/mina/",
+            "code": "/song-data/mina/code.rb",
+            "song-name": "",
+            "artists": "",
+            "creator": "Mina Cooper"
+        },
+        "mmasi": {
+            "genre": "",
+            "cover": "/song-data/mmasi/",
+            "background": "/song-data/mmasi/",
+            "recording": "/song-data/mmasi/",
+            "code": "/song-data/mmasi/code.rb",
+            "song-name": "",
+            "artists": "",
+            "creator": "Mmasi Ibeh"
+        },
+        "nate": {
+            "genre": "",
+            "cover": "/song-data/nate/",
+            "background": "/song-data/nate/",
+            "recording": "/song-data/nate/NC Custom Song.wav",
+            "code": "/song-data/nate/code.rb",
+            "song-name": "",
+            "artists": "",
+            "creator": "Nathaniel Castilo"
+        },
+        "nathan": {
+            "genre": "",
+            "cover": "/song-data/nathan/",
+            "background": "/song-data/nathan/",
+            "recording": "/song-data/nathan/",
+            "code": "/song-data/nathan/",
+            "song-name": "",
+            "artists": "",
+            "creator": "Nathan Acosta"
+        },
+        "romeo": {
+            "genre": "",
+            "cover": "/song-data/romeo/",
+            "background": "/song-data/romeo/",
+            "recording": "/song-data/romeo/customsong-RomeoP.wav",
+            "code": "/song-data/romeo/code.rb",
+            "song-name": "",
+            "artists": "",
+            "creator": "Romeo Pearson"
+        },
+        "salvador": {
+            "genre": "",
+            "cover": "/song-data/salvador/",
+            "background": "/song-data/salvador/",
+            "recording": "/song-data/salvador/",
+            "code": "/song-data/salvador/code.rb",
+            "song-name": "",
+            "artists": "",
+            "creator": "Salvador Rojas"
+        },
+        "sam": {
+            "genre": "",
+            "cover": "/song-data/sam/",
+            "background": "/song-data/sam/",
+            "recording": "/song-data/sam/",
+            "code": "/song-data/sam/code.rb",
+            "song-name": "",
+            "artists": "",
+            "creator": "Samuel Villa"
+        },
+        "sophie": {
+            "genre": "",
+            "cover": "/song-data/sophie/",
+            "background": "/song-data/sophie/",
+            "recording": "/song-data/sophie/It's All Right Code.rb.wav",
+            "code": "/song-data/sophie/code.rb",
+            "song-name": "",
+            "artists": "",
+            "creator": "Sophia Owens"
+        },
+        "will": {
+            "genre": "",
+            "cover": "/song-data/will/",
+            "background": "/song-data/will/",
+            "recording": "/song-data/will/",
+            "code": "/song-data/will/code.rb",
+            "song-name": "",
+            "artists": "",
+            "creator": "William Murphy"
+        },
+        "windgrove": {
+            "genre": "",
+            "cover": "/song-data/windgrove/",
+            "background": "/song-data/",
+            "recording": "/song-data/windgrove/Pokemon Red and Blue Theme.wav",
+            "code": "/song-data/windgrove/code.rb",
+            "song-name": "",
+            "artists": "",
+            "creator": "Windgrove Daniel"
+        }
+    }
+}

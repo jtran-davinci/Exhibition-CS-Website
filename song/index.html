@@ -20,17 +20,17 @@
             <div class="main-content">
                 <div class="song-card">
                   <div class="song-image-container">
-                    <img class="song-image" src="/song-data/justint/Freudian_by_Daniel_Caesar.jpg"/>
+                    <img class="song-image" id="cover"/>
                   </div>
                   <div class="song-detail">
                     <div class="song-upper">
-                      <h1>Best Part (feat H.E.R.)</h1>
-                      <h2>Daniel Caesar, H.E.R.</h2>
+                      <h1 id="songName"></h1>
+                      <h2 id="artists"></h2>
                     </div>
 
                     <div class="song-lower">
                       <h2>Recreated in Sonic Pi by</h2>
-                      <h1>Justin Tran</h1>
+                      <h1 id="creator"></h1>
                     </div>
                   </div>
                 </div>
@@ -39,7 +39,7 @@
             <div class="main-content">
                 <div class="song-player">
 
-                  <audio id="audio" src="/song-data/justint/custom-song.wav"></audio>
+                  <audio id="audio"></audio>
 
                   <div class="progress-container" id="progressContainer">
                     <div class="progress-bar" id="progressBar"></div>
@@ -97,7 +97,8 @@
           </div>
         </div>
     </div>
-
+    
+    <script src="loader.js" defer></script>
     <script src="audio-player.js" defer></script>
     <script src="code-toggle.js" defer></script>
   </body>
