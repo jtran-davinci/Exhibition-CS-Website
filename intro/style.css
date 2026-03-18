@@ -296,3 +296,13 @@ body {
     border-radius: 50%;
     transform: translate(-50%, -50%);
 }
+
+#return {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+#return .icon {
+    display: flex;
+}

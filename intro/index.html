@@ -11,12 +11,19 @@
         <link rel="stylesheet" href="style.css" />
     </head>
     <body>
-        <a class="floating-btn top-btn" id="return" href="../">Return Home</a>
+        <a class="floating-btn top-btn" id="return" href="../">
+            <span class="icon">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none">
+                    <path d="M15 18l-6-6 6-6" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </span>
+            Return Home
+        </a>
         <a class="floating-btn bottom-btn" href="../creation/">How was this site made?</a>
 
         <div class="guide-container">
             <div class="title-section">
-                <h1>Welcome to the super epic rave club!</h1>
+                <h1>Welcome to the Computer Science Pi Party!</h1>
                 <h4>Learn about Sonic Pi before making your own music and raving!</h4>
             </div>
 
@@ -24,9 +31,9 @@
                 <h1>What's this exhibition about?</h1>
                 <p>Our exhibition is revolved around a night club so have fun and enjoy your time here! The focus in this exhibition is around Sonic Pi, a music platform used to teach programming with the use of music.</p>
                  <div class="image-grid">
-                    <img src="../images/desmos-graph.png"/>
-                    <img src="../images/desmos-graph.png"/>
-                    <img src="../images/desmos-graph.png"/>
+                    <img src="../images/sonicpi/live-performance.png"/>
+                    <img src="../images/sonicpi/live-coding.png"/>
+                    <img src="../images/sonicpi/sonic-pi-mc.png"/>
                 </div>
             </div>
 
@@ -34,8 +41,8 @@
                 <h1>How does it work?</h1>
                 <p>Sonic Pi uses a programming language called Ruby. In Ruby, we use simple instructions to play certain notes and also samples!<br></br>Below, we'll go over some basics of Sonic Pi but if you're interested, come make your own music with us!</p>
                 <div class="image-grid">
-                    <img src="../images/desmos-graph.png"/>
-                    <img src="../images/desmos-graph.png"/>
+                    <img src="../images/sonicpi/Sonic_Pi_Tutorial.png"/>
+                    <img src="../images/sonicpi/Screenshot 2026-03-18 130930.png"/>
                 </div>
                 <div class="image-caption">
                     Sonic Pi Interface
@@ -54,7 +61,7 @@ play :C4 # Plays C again on the piano!
 
                 <div class="audio-player">
 
-                    <audio id="audio" src="../audio/Guitar chords for Best Part by Daniel Caesar ft. H.E.R..mp3"></audio>
+                    <audio id="audio" src="../audio/intro/first-sound-edited.wav"></audio>
 
                     <button class="control-btn playPause">
 
@@ -97,7 +104,7 @@ end # once 5 times finish, then we are done!
 
                 <div class="audio-player">
 
-                    <audio id="audio" src="../audio/Guitar chords for Best Part by Daniel Caesar ft. H.E.R..mp3"></audio>
+                    <audio id="audio" src="../audio/intro/second-sound-edited.wav"></audio>
 
                     <button class="control-btn playPause">
 
@@ -156,7 +163,7 @@ play_C4 # call the function so it's used!
 
                 <div class="audio-player">
 
-                    <audio id="audio" src="../audio/Guitar chords for Best Part by Daniel Caesar ft. H.E.R..mp3"></audio>
+                    <audio id="audio" src="../audio/intro/third-sound-edited.wav"></audio>
 
                     <button class="control-btn playPause">
 
@@ -189,7 +196,7 @@ play_C4 # call the function so it's used!
 
                 <div class="code-section">
                     <pre class="code-block"><code class="language-ruby">
-define :player_a_note do | note_we_want | # define the name of our function and a parameter we need
+define :play_a_note do | note_we_want | # define the name of our function and a parameter we need
     play note_we_want # plays the note that we want on the piano
     sleep 2 # wait for two seconds!
 end # finish when we play the note and wait 2!
@@ -200,7 +207,7 @@ play_a_note :D4 # we want to play the note :D4
 
                 <div class="audio-player">
 
-                    <audio id="audio" src="../audio/Guitar chords for Best Part by Daniel Caesar ft. H.E.R..mp3"></audio>
+                    <audio id="audio" src="../audio/intro/fourth-audio.wav"></audio>
 
                     <button class="control-btn playPause">
 
@@ -236,18 +243,18 @@ play_a_note :D4 # we want to play the note :D4
                 <h1>Listen to some songs first!</h1>
                 <p>Before you go make your own music, listen to a few songs and check the code of each song to see if you can understand how it plays!</p>
                 <div class="image-grid">
-                    <img src="../images/desmos-graph.png"/>
-                    <img src="../images/desmos-graph.png"/>
-                    <img src="../images/desmos-graph.png"/>
-                    <img src="../images/desmos-graph.png"/>
+                    <img src="../images/sonicpi/Screenshot (1).png"/>
+                    <img src="../images/sonicpi/sonic_pi_gif.gif"/>
+                    <img src="../images/sonicpi/sonicpicode.jpeg.jpeg"/>
+                    <img src="../images/sonicpi/welcome-to.png"/>
                 </div>
             </div>
 
             <div class="section">
                 <h1>Have fun!</h1>
-                <p>Thanks for stopping by!</p>
+                <p>Thanks for stopping by and make some beats!</p>
                 <div class="image-grid">
-                    <img src="../images/desmos-graph.png"/>
+                    <img src="../images/pics/IMG_0745.jpg"/>
                 </div>
                 <div class="image-caption">
                     Made by Web Dev team with love and care
