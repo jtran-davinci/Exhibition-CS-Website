@@ -41,7 +41,7 @@ fetch("../song-data/songs.json")
                 <h1>${song.creator}</h1>
             </div>
 
-            <a class="listen-button" href="/song/?id=${id}">
+            <a class="listen-button" href="../song/?id=${id}">
                 Listen
             </a>
         </div>
