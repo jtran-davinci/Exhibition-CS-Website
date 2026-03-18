@@ -142,12 +142,12 @@
         },
         "nathan": {
             "genre": "rock",
-            "cover": "../song-data/nathan/",
-            "background": "../song-data/nathan/",
-            "recording": "../song-data/nathan/",
-            "code": "../song-data/nathan/",
-            "song-name": "Custom",
-            "artists": "Nathan Acosta",
+            "cover": "../song-data/nathan/cover.jpg",
+            "background": "../song-data/nathan/bg.jpg",
+            "recording": "../song-data/nathan/song.rb",
+            "code": "../song-data/nathan/code.rb",
+            "song-name": "Die Your Daughter",
+            "artists": "Susannah Joffe",
             "creator": "Nathan Acosta"
         },
         "romeo": {
