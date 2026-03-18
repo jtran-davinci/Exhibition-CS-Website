@@ -80,7 +80,7 @@ function showOverlay() {
 
         if (timeLeft <= 0) {
             clearInterval(countdownInterval);
-            window.location.href = "/";
+            window.location.href = "../";
         }
     }, 1000);
 }
@@ -103,7 +103,7 @@ function resetTimer() {
 window.addEventListener('keydown', (e) => {
     if (e.ctrlKey && e.key.toLowerCase() === 'b') {
         e.preventDefault();
-        window.location.href = "/";
+        window.location.href = "../";
     }
 });
 

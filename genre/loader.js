@@ -4,7 +4,6 @@ const genre = params.get("genre");
 const container = document.getElementById("songContainer");
 const genreTitle = document.getElementById("genre");
 
-// Set header
 genreTitle.textContent = genre ? genre.toUpperCase() : "Unknown Genre";
 
 const displayNames = {
@@ -16,18 +15,15 @@ const displayNames = {
 
 genreTitle.textContent = displayNames[genre] || genre;
 
-// Load songs
-fetch("/song-data/songs.json")
+fetch("../song-data/songs.json")
   .then(res => res.json())
   .then(data => {
     const songs = data.songs;
 
     Object.entries(songs).forEach(([id, song]) => {
 
-      // Skip songs not in this genre
       if (!song.genre || song.genre.toLowerCase() !== genre?.toLowerCase()) return;
 
-      // Create card
       const card = document.createElement("div");
       card.className = "song-card-holder";
 
@@ -54,11 +50,8 @@ fetch("/song-data/songs.json")
       container.appendChild(card);
     });
 
-    // If nothing found
     if (container.children.length === 0) {
       container.innerHTML = "<p style='color:white;'>No songs found for this genre.</p>";
     }
   })
   .catch(err => console.error(err));
-
-  //r&b link http://127.0.0.1:5500/genre/index.html?genre=r%26b

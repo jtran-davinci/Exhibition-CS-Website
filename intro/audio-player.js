@@ -15,7 +15,6 @@ document.querySelectorAll(".audio-player").forEach((player) => {
 
   let isDragging = false;
 
-  // ▶️ Play / Pause
   playPauseBtn.addEventListener("click", () => {
     if (audio.paused) {
       audio.play();
@@ -38,7 +37,6 @@ document.querySelectorAll(".audio-player").forEach((player) => {
     playIcon.classList.remove("active");
   }
 
-  // ⏱ Format time
   function formatTime(time) {
     const minutes = Math.floor(time / 60);
     const seconds = Math.floor(time % 60)
@@ -47,12 +45,10 @@ document.querySelectorAll(".audio-player").forEach((player) => {
     return `${minutes}:${seconds}`;
   }
 
-  // ⏱ Load duration
   audio.addEventListener("loadedmetadata", () => {
     totalTimeEl.textContent = formatTime(audio.duration);
   });
 
-  // 🔄 Update progress
   audio.addEventListener("timeupdate", () => {
     if (!isDragging) {
       const percent = (audio.currentTime / audio.duration) * 100;
@@ -64,14 +60,12 @@ document.querySelectorAll(".audio-player").forEach((player) => {
     }
   });
 
-  // 🖱 Click to seek
   progressContainer.addEventListener("click", (e) => {
     const rect = progressContainer.getBoundingClientRect();
     const percent = (e.clientX - rect.left) / rect.width;
     audio.currentTime = percent * audio.duration;
   });
 
-  // 🎯 Dragging knob
   progressKnob.addEventListener("mousedown", () => {
     isDragging = true;
   });

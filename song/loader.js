@@ -1,7 +1,7 @@
 const params = new URLSearchParams(window.location.search);
 const songId = params.get("id");
 
-fetch("/song-data/songs.json")
+fetch("../song-data/songs.json")
   .then(res => res.json())
   .then(data => {
     const song = data.songs[songId];
@@ -11,7 +11,7 @@ fetch("/song-data/songs.json")
       return;
     }
 
-    document.getElementById("return").href = `/genre/?genre=${song.genre}`;
+    document.getElementById("return").href = `../genre/?genre=${song.genre}`;
 
     document.getElementById("cover").src = song.cover;
     document.getElementById("songName").textContent = song["song-name"];
