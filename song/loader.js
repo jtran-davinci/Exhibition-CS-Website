@@ -1,8 +1,6 @@
-// Get ID from URL
 const params = new URLSearchParams(window.location.search);
 const songId = params.get("id");
 
-// Load JSON
 fetch("/song-data/songs.json")
   .then(res => res.json())
   .then(data => {
@@ -13,7 +11,8 @@ fetch("/song-data/songs.json")
       return;
     }
 
-    // Update UI
+    document.getElementById("return").href = `/genre/?genre=${song.genre}`;
+
     document.getElementById("cover").src = song.cover;
     document.getElementById("songName").textContent = song["song-name"];
     document.getElementById("artists").textContent = song.artists;
@@ -23,7 +22,6 @@ fetch("/song-data/songs.json")
 
     document.body.style.backgroundImage = `url(${song.background})`;
 
-    // Load code dynamically
     fetch(song.code)
       .then(res => res.text())
       .then(code => {
@@ -32,5 +30,3 @@ fetch("/song-data/songs.json")
       });
   })
   .catch(err => console.error(err));
-
-  // http://127.0.0.1:5500/song/index.html?id=justin

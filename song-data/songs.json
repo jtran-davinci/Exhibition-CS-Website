@@ -1,7 +1,7 @@
 {
     "songs": {
         "justin": {
-            "genre": "r&b",
+            "genre": "rnb",
             "cover": "/song-data/justin/Freudian_by_Daniel_Caesar.jpg",
             "background": "/song-data/justin/background.gif",
             "recording": "/song-data/justin/custom-song.wav",

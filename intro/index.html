@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>Our Work</title>
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-okaidia.min.css" rel="stylesheet"/>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-ruby.min.js"></script>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <a class="floating-btn top-btn" id="return" href="/">Return Home</a>
+        <a class="floating-btn bottom-btn" href="/creation/">How was this site made?</a>
+
+        <div class="guide-container">
+            <div class="title-section">
+                <h1>Welcome to the super epic rave club!</h1>
+                <h4>Learn about Sonic Pi before making your own music and raving!</h4>
+            </div>
+
+            <div class="section">
+                <h1>What's this exhibition about?</h1>
+                <p>Our exhibition is revolved around a night club so have fun and enjoy your time here! The focus in this exhibition is around Sonic Pi, a music platform used to teach programming with the use of music.</p>
+                 <div class="image-grid">
+                    <img src="/images/desmos-graph.png"/>
+                    <img src="/images/desmos-graph.png"/>
+                    <img src="/images/desmos-graph.png"/>
+                </div>
+            </div>
+
+            <div class="section">
+                <h1>How does it work?</h1>
+                <p>Sonic Pi uses a programming language called Ruby. In Ruby, we use simple instructions to play certain notes and also samples!<br></br>Below, we'll go over some basics of Sonic Pi but if you're interested, come make your own music with us!</p>
+                <div class="image-grid">
+                    <img src="/images/desmos-graph.png"/>
+                    <img src="/images/desmos-graph.png"/>
+                </div>
+                <div class="image-caption">
+                    Sonic Pi Interface
+                </div>
+
+                <h1>Notes and Sleeps</h1>
+                <p>The first step of Sonic Pi is making sound. Below is a sample of code that produces a note and waits to play another note!</p>
+
+                <div class="code-section">
+                    <pre class="code-block"><code class="language-ruby">
+play :C4 # C on a piano!
+sleep 2 # wait for two seconds!
+play :C4 # Plays C again on the piano!
+                    </code></pre>
+                </div>
+
+                <div class="audio-player">
+
+                    <audio id="audio" src="/audio/Guitar chords for Best Part by Daniel Caesar ft. H.E.R..mp3"></audio>
+
+                    <button class="control-btn playPause">
+
+                        <svg viewBox="0 0 24 24" class="playIcon icon active">
+                            <polygon points="5 3 19 12 5 21"></polygon>
+                        </svg>
+
+                        <svg viewBox="0 0 24 24" class="pauseIcon icon">
+                            <rect x="6" y="4" width="4" height="16"></rect>
+                            <rect x="14" y="4" width="4" height="16"></rect>
+                        </svg>
+
+                    </button>
+
+                    <p class="currentTime">0:00</p>
+
+                    <div class="progress-container">
+                        <div class="progress-bar"></div>
+                        <div class="progress-knob"></div>
+                    </div>
+
+                    <p class="totalTime">0:00</p>
+                </div>
+
+                <div class="image-caption">
+                    Listen to what this plays!
+                </div>
+
+                <h1>Live Loops and Loops</h1>
+                <p>If you need to play a note repeatedly, you can utilize loops to repeat them more efficiently!</p>
+
+                <div class="code-section">
+                    <pre class="code-block"><code class="language-ruby">
+5.times do # play everything in this 5 times
+    play :C4 # C on a piano!
+    sleep 2 # wait for two seconds!
+end # once 5 times finish, then we are done!
+                    </code></pre>
+                </div>
+
+                <div class="audio-player">
+
+                    <audio id="audio" src="/audio/Guitar chords for Best Part by Daniel Caesar ft. H.E.R..mp3"></audio>
+
+                    <button class="control-btn playPause">
+
+                        <svg viewBox="0 0 24 24" class="playIcon icon active">
+                            <polygon points="5 3 19 12 5 21"></polygon>
+                        </svg>
+
+                        <svg viewBox="0 0 24 24" class="pauseIcon icon">
+                            <rect x="6" y="4" width="4" height="16"></rect>
+                            <rect x="14" y="4" width="4" height="16"></rect>
+                        </svg>
+
+                    </button>
+
+                    <p class="currentTime">0:00</p>
+
+                    <div class="progress-container">
+                        <div class="progress-bar"></div>
+                        <div class="progress-knob"></div>
+                    </div>
+
+                    <p class="totalTime">0:00</p>
+                </div>
+
+                <div class="image-caption">
+                    Listen to the loop!
+                </div>
+
+                <p>If you want to play something forever, you can use a live loop instead!</p>
+                <div class="code-section">
+                    <pre class="code-block"><code class="language-ruby">
+live_loop :play_c4ever do # play everything in this forever
+    play :C4 # C on a piano!
+    sleep 2 # wait for two seconds!
+end
+                    </code></pre>
+                </div>
+
+                <div class="image-caption">
+                    This is the same as the first loop instead it loops forever
+                </div>
+
+                <h1>Functions and Parameters</h1>
+                <p>Instead of having to repeat instructions when we use it throughout our song, we can define it and call it when we need to!</p>
+
+                <div class="code-section">
+                    <pre class="code-block"><code class="language-ruby">
+define :play_C4 do # define the name of our function
+    play :C4 # C on a piano!
+    sleep 2 # wait for two seconds!
+end # finish when we play C and wait 2!
+
+play_C4 # call the function so it's used!
+                    </code></pre>
+                </div>
+
+                <div class="audio-player">
+
+                    <audio id="audio" src="/audio/Guitar chords for Best Part by Daniel Caesar ft. H.E.R..mp3"></audio>
+
+                    <button class="control-btn playPause">
+
+                        <svg viewBox="0 0 24 24" class="playIcon icon active">
+                            <polygon points="5 3 19 12 5 21"></polygon>
+                        </svg>
+
+                        <svg viewBox="0 0 24 24" class="pauseIcon icon">
+                            <rect x="6" y="4" width="4" height="16"></rect>
+                            <rect x="14" y="4" width="4" height="16"></rect>
+                        </svg>
+
+                    </button>
+
+                    <p class="currentTime">0:00</p>
+
+                    <div class="progress-container">
+                        <div class="progress-bar"></div>
+                        <div class="progress-knob"></div>
+                    </div>
+
+                    <p class="totalTime">0:00</p>
+                </div>
+
+                <div class="image-caption">
+                    Listen to the function be played!
+                </div>
+
+                <p>Let's say that we wanted to just play another note rather :C4. We can utilize a parameter to get to play what we want!</p>
+
+                <div class="code-section">
+                    <pre class="code-block"><code class="language-ruby">
+define :player_a_note do | note_we_want | # define the name of our function and a parameter we need
+    play note_we_want # plays the note that we want on the piano
+    sleep 2 # wait for two seconds!
+end # finish when we play the note and wait 2!
+
+play_a_note :D4 # we want to play the note :D4
+                    </code></pre>
+                </div>
+
+                <div class="audio-player">
+
+                    <audio id="audio" src="/audio/Guitar chords for Best Part by Daniel Caesar ft. H.E.R..mp3"></audio>
+
+                    <button class="control-btn playPause">
+
+                        <svg viewBox="0 0 24 24" class="playIcon icon active">
+                            <polygon points="5 3 19 12 5 21"></polygon>
+                        </svg>
+
+                        <svg viewBox="0 0 24 24" class="pauseIcon icon">
+                            <rect x="6" y="4" width="4" height="16"></rect>
+                            <rect x="14" y="4" width="4" height="16"></rect>
+                        </svg>
+
+                    </button>
+
+                    <p class="currentTime">0:00</p>
+
+                    <div class="progress-container">
+                        <div class="progress-bar"></div>
+                        <div class="progress-knob"></div>
+                    </div>
+
+                    <p class="totalTime">0:00</p>
+                </div>
+
+                <div class="image-caption">
+                    Listen to the parmeter function!
+                </div>
+
+                <p>That's the gist of Sonic Pi and an introduction to get you started!</p>
+            </div>
+
+            <div class="section">
+                <h1>Listen to some songs first!</h1>
+                <p>Before you go make your own music, listen to a few songs and check the code of each song to see if you can understand how it plays!</p>
+                <div class="image-grid">
+                    <img src="/images/desmos-graph.png"/>
+                    <img src="/images/desmos-graph.png"/>
+                    <img src="/images/desmos-graph.png"/>
+                    <img src="/images/desmos-graph.png"/>
+                </div>
+            </div>
+
+            <div class="section">
+                <h1>Have fun!</h1>
+                <p>Thanks for stopping by!</p>
+                <div class="image-grid">
+                    <img src="/images/desmos-graph.png"/>
+                </div>
+                <div class="image-caption">
+                    Made by Web Dev team with love and care
+                </div>
+            </div>
+        </div>
+
+    <a class="button" href="/choose-genre/">Discover Music</a>
+
+    <script src="audio-player.js" defer></script>
+    <script src="/scripts/timeout.js" defer></script>
+    </body>
+</html>
