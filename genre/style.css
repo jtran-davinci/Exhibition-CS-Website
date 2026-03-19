@@ -1,6 +1,7 @@
 body {
     display: flex;
     justify-content: center;
+    background-color: #111;
     overflow-x: hidden;
     background-size: cover;
     background-position: top;
@@ -46,7 +47,7 @@ body {
     display: flex;
     gap: 30px;
 
-    justify-content: space-between;
+    justify-content: center;
     flex-wrap: wrap;
 }
 

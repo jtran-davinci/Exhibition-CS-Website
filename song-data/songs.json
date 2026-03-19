@@ -63,7 +63,7 @@
         "daniel": {
             "genre": "rock",
             "cover": "../song-data/daniel/images.jpg",
-            "background": "../song-data/daniel/images(1).jpg",
+            "background": "../song-data/daniel/imagesbg.jpg",
             "recording": "../song-data/daniel/",
             "code": "../song-data/daniel/code.rb",
             "song-name": "After Dark Remix",
@@ -143,7 +143,7 @@
         "nathan": {
             "genre": "rock",
             "cover": "../song-data/nathan/cover.jpg",
-            "background": "../song-data/nathan/bg.jpg",
+            "background": "../song-data/nathan/bg.avif",
             "recording": "../song-data/nathan/custom-song.wav",
             "code": "../song-data/nathan/code.rb",
             "song-name": "Die Your Daughter",
@@ -188,7 +188,7 @@
             "code": "../song-data/sophie/code.rb",
             "song-name": "It's All Right",
             "artists": "Jon Baitiste",
-            "creator": "Sophia Owens"
+            "creator": "Sophie Owens"
         },
         "will": {
             "genre": "rnb",
